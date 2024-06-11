@@ -608,8 +608,6 @@ const enableSearch = () => {
 };
 loadCountryAPI();
 
-
-
 //QUIZ APP//
 
 
