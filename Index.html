@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Vjezba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <ul id='list'>
+
+    </ul>
+    <button id='add'>Add</button>
+    <input type="text" id='inputAdd'>
+    <button id='remove'>Remove</button>
+
+
+    <button id="getPosts">Get API DATA</button>
+    <div id="output"></div>
+
+
+    <p>Some outer text</p>
+    <p>Some outer text</p>
+
+    <div id="div1" style="border: solid blue 3px">
+      <p>Some div1 text</p>
+      <p>Some div1 text</p>
+      <p>Some div1 text</p>
+
+      <div id="div2" style="border: solid red 3px">
+        <p>Some div2 text</p>
+        <p>Some div2 text</p>
+      </div>
+    </div>
+
+    <p>Some outer text</p>
+    <p>Some outer text</p>
+
+    <button onclick="getAllParaElems();">
+      Show all p elements in document
+    </button>
+    <br />
+
+    <button onclick="div1ParaElems();">
+      Show all p elements in div1 element
+    </button>
+    <br />
+
+    <button onclick="div2ParaElems();">
+      Show all p elements in div2 element
+    </button>
+
+    <button id="myBtn">Try it</button>
+
+    <p id="demo"></p>
+
+
+    <form id="form">
+        <h1>Registration</h1>
+        <div class="input-control">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="text">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="password">Password</label>
+            <input id="password"name="password" type="password">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="password2">Password again</label>
+            <input id="password2"name="password2" type="password">
+            <div class="error"></div>
+        </div>
+        <button type="submit">Sign Up</button>
+    </form>
+
+
+    <!-- /* Github Search Users By Username API */ -->
+
+    <div class="container">
+      <h1>Github User Search</h1>
+      <form id="searchForm">
+          <input type="text" id="username" placeholder="Enter username">
+          <button type="submit">Search</button>
+      </form>
+      <div id="userProfile"></div>
+    </div>
+
+
+
+    <!--POKEMON FETCH API-->
+    <div class="pokemoni">
+      <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
+      <button onclick="fetchData()">Fetch Pokemon</button><br>
+    </div>
+
+    <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none" height="320px">
+
+
+    <!--LOGIN-->
+
+    <div class="containerLogin">
+      <form id="formLogin">
+        <h1>LOGIN</h1>
+        <div class="input-login">
+          <label for="email">Email</label>
+          <input id="userEmail" name="email" type="text">
+          <div class="error" id="emailError"></div>
+        </div>
+        <div class="input-login">
+          <label for="password">Password</label>
+          <input id="passwordd" name="password" type="password">
+          <div class="error" id="passwordError"></div>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+
+
+
+    <!-- CALCULATOR -->
+
+    <div class="app">
+
+      <div class="calculator">
+
+        <div class="display">
+          <div class="content">
+            <div class="input"></div>
+            <div class="output"></div>
+          </div>
+        </div>
+
+        <div class="keys">
+
+          <div data-key="clear" class="key action">
+            <span>AC</span>
+          </div>
+
+          <div data-key="brackets" class="key action">
+            <span>( )</span>
+          </div>
+
+          <div data-key="%" class="key action">
+            <span>%</span>
+          </div>
+
+          <div data-key="/" class="key operator">
+            <span>÷</span>
+          </div>
+
+          <div data-key="7" class="key">
+            <span>7</span>
+          </div>
+
+          <div data-key="8" class="key">
+            <span>8</span>
+          </div>
+
+          <div data-key="9" class="key">
+            <span>9</span>
+          </div>
+
+          <div data-key="*" class="key operator">
+            <span>x</span>
+          </div>
+
+          <div data-key="4" class="key">
+            <span>4</span>
+          </div>
+
+          <div data-key="5" class="key">
+            <span>5</span>
+          </div>
+
+          <div data-key="6" class="key">
+            <span>6</span>
+          </div>
+
+          <div data-key="-" class="key operator">
+            <span>-</span>
+          </div>
+
+          <div data-key="1" class="key">
+            <span>1</span>
+          </div>
+
+          <div data-key="2" class="key">
+            <span>2</span>
+          </div>
+
+          <div data-key="3" class="key">
+            <span>3</span>
+          </div>
+
+          <div data-key="+" class="key operator">
+            <span>+</span>
+          </div>
+
+          <div data-key="backspace" class="key action">
+            <span>&lt;</span>
+          </div>
+
+          <div data-key="0" class="key">
+            <span>0</span>
+          </div>
+
+          <div data-key="." class="key">
+            <span>.</span>
+          </div>
+
+          <div data-key="=" class="key operator">
+            <span>=</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- WEATHER APP  -->
+
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="enter city name" spellcheck="false">
+        <button><img src="images/search.png"></button>
+      </div>
+      <div class="weather">
+        <img src="images/rain.png" class="weather-icon">
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">Bugojno</h2>
+        <h3 class="country"></h3>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png">
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png">
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- /* RESTCOUNTRY API */ -->
+
+
+    <h1>Rest Countries API</h1>
+    <div class="wrapper">
+      <input type="text" id="searchInput" placeholder="Search country">
+      <button onclick="searchCountry()">Search</button>
+    </div>
+    <div class="countries" id="countries"></div>
+
+
+
+    <!-- //QUIZ APP// -->
+
+    <h1>Quiz APP</h1>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 id="question">Question Text</h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">Answer</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="b_text">Answer</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer">
+            <label for="c" id="c_text">Answer</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer">
+            <label for="d" id="d_text">Answer</label>
+          </li>
+        </ul>
+      </div>
+      <button id="next">Next</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+#form {
+    margin: 20px;
+    padding: 20px;
+    background-color: gold;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#form h1 {
+    color: black;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color:blue;
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: red;
+}
+
+.input-control .error {
+    color: red;
+    font-size: 9px;
+    height: 13px;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+/* Github Search Users By Username API */
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-login input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.containerLogin{
+    display: flex;
+    padding: 40px;
+    margin: 40px;
+    background: rgb(68, 172, 68);
+    height: 60vh;
+}
+
+#formLogin{
+    text-align: center;
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+
+/* //POKEMONI// */
+
+.pokemoni{
+  text-align: center;
+}
+
+
+
+/* // CALCULATOR // */
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background-color: #22252D;
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.display {
+  min-height: 200px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  text-align: right;
+}
+
+.display .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: auto;
+}
+
+.display .input {
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.display .output {
+  font-size: 48px;
+  font-weight: 700;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.display .operator {
+  color: #EB6666;
+}
+
+.display .brackets,
+.display .percent {
+  color: #26FED7;
+}
+
+.keys {
+  background-color: #292D36;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 16px;
+}
+
+.keys .key {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  padding-top: 100%;
+  background-color: #262933;
+}
+
+.keys .key span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 32px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.keys .key:hover {
+  box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.keys .key.operator span {
+  color: #EB6666;
+}
+
+.keys .key.action span {
+ color: #26FED7;
+}
+
+
+
+
+/* WEATHER APP */
+
+
+.search{
+  text-align: center;
+  padding: 60px;
+}
+
+.weather{
+  text-align: center;
+}
+
+.card{
+  background-color: lightskyblue;
+}
+
+.search button img{
+  width: 16px;
+}
+
+.weather-icon{
+  width: 170px;
+  margin-top: 30px;
+
+}
+
+.weather h1{
+  font-size: 46px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity, .wind{
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+
+
+/* RESTCOUNTRY API */
+
+.countries{
+  max-width: 1240px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.country-div{
+  background: #c5e7f5;
+  border: 1px solid burlywood;
+  padding: 15px;
+}
+
+.wrapper{
+  text-align: center;
+}
+
+
+@media screen and (max-width: 576px){
+  .countries{
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+/* //QUIZ APP// */
+
+
+.quiz-container{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  overflow: hidden;
+}
+
+.quiz-header{
+  padding: 64px;
+}
+
+h2{
+  padding: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li{
+  font-size: 20px;
+  margin: 16px 0;
+}
+
+ul li label{
+  cursor: pointer;
+}
+
+#next{
+  background-color: #03cae4;
+  color: #fff;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 20px;
+}
+
+
+#next:hover{
+  background-color: #04adc4;
+}
+
+
+#next:focus{
+  outline: none;
+  background-color: #44b927;
+}
+
+#reload{
+  background-color: #03cae4;
+  width: 100%;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
