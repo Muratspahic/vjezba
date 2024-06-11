@@ -610,8 +610,6 @@ loadCountryAPI();
 
 
 
-
-
 //QUIZ APP//
 
 
@@ -708,38 +706,4 @@ submitBtn.addEventListener('click', () => {
        }
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
